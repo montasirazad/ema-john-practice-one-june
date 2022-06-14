@@ -3,17 +3,23 @@ import './Shop.css';
 
 const Shop = () => {
 
-    const [products,setproducts] = useState([]);
+    const [products, setproducts] = useState([]);
 
-    useEffect(()=>{
+    useEffect(() => {
         fetch('./products.JSON')
-        .then()
+            .then()
 
-    },[])
-    
+    }, [])
+
     return (
-        <div>
-            <h4>this is shop</h4>
+        <div className='shop-container'>
+            <div className='product-container'>
+                <h4>this is shop</h4>
+            </div>
+
+            <div className='cart-container'>
+                <h3>this is cart</h3>
+            </div>
         </div>
     );
 };
